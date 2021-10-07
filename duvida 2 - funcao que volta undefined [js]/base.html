@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Lzt Site New</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <h1>Formulário de Ação</h1>
+    <div id="action">
+      <form id="action-form-group">
+        <input type="radio" id="prev" name="action" value="prev" />
+        <label for="prev">Previdenciário</label><br />
+        <input type="radio" id="civ" name="action" value="civ" />
+        <label for="civ">Cível</label><br />
+        <input type="radio" id="tri" name="action" value="tri" />
+        <label for="tri">Tributário</label><br />
+        <input type="radio" id="adm" name="action" value="adm" />
+        <label for="adm">Administrativo</label><br />
+      </form>
+    </div>
+
+
+    <h1 id="starting"></h1>
+
+
+    <div id="prev-options" class="">
+      <h1>Previdenciário</h1>
+      <form id="prev-options-form-group">
+        <input type="radio" id="atc" name="prev-options" value="atc" />
+        <label for="aposentadoria">Aposentadoria</label><br />
+        <input type="radio" id="ppm" name="prev-options" value="ppm" />
+        <label for="pensao">Pensao Por Morte</label><br />
+        <input type="radio" id="inc" name="prev-options" value="inc" />
+        <label for="inc">Benefícios por Incapacidade (Auxílio Doença - Invalidez - Loas/BPC)</label><br />
+        <input type="radio" id="auxa" name="prev-options" value="auxilioAcidente" />
+        <label for="auxa">Auxílio Acidente Permanente</label><br />
+        <input type="radio" id="cons" name="prev-options" value="consulta" />
+        <label for="cons">Consulta - Agendamento - Dúvidas - Cálculos</label><br />
+      </form>
+    </div>
+
+    <div id="prev-options-atc-form-group" class="">
+      <h1>Aposentadoria</h1>
+      <form id="prev-options-atc">
+        <input type="radio" id="atc-tc" name="prev-options-atc" value="atc-tc" />
+        <label for="atc-tc">Aposentadoria Por Tempo De Contribuição ou Regras de Transição</label><br />
+          <details >
+            <summary>Saiba Mais</summary>
+              <p>Pedágio 50%: ...</p>
+              <p>Pedágio 100%: ...</p>
+              <p>Professor: ...</p>
+              <h5>Veja Nossos Posts e Vídeos:</h5>
+          </details>
+        <input type="radio" id="atc-aid" name="prev-options-atc" value="atc-aid" />
+        <label for="atc-aid">Aposentadoria Por Idade</label><br />
+          <details >
+            <summary>Saiba Mais</summary>
+              <h5>Veja Nossos Posts e Vídeos:</h5>
+          </details>
+        <input type="radio" id="atc-esp" name="prev-options-atc" value="atc-esp" />
+        <label for="atc-esp">Aposentadoria Especial</label><br />
+         <details >
+           <summary>Saiba Mais</summary>
+             <p>Aposentadoria especial é aquela devida a trabalhadores que são expostos a atividades insalubres ou perigosas, reduzindo-se o tempo mínimo de contribuição para aposentadoria e a idade.</p>
+             <h5>Veja Nossos Posts e Vídeos:</h5>
+         </details>
+        <input type="radio" id="atc-rur" name="prev-options-atc" value="atc-rur" />
+        <label for="atc-rur">Aposentadoria Rural</label><br />
+          <details>
+            <summary>Saiba Mais</summary>
+              <p>Aposentadoria do Trabalhador Rural é aquela devida aos pequenos produtores rurais em regime de economia familiar, ou com reconhecimento de tempo parcial para utilização na aposentadoria normal. </p>
+              <h5>Veja Nossos Posts e Vídeos:</h5>
+          </details>
+        <input type="radio" id="atc-servidor" name="prev-options-atc" value="atc-servidor" />
+        <label for="atc-servidor">Aposentadoria Servidor Público</label><br />
+        <details>  
+          <summary>Saiba Mais</summary>
+            <p>Aposentadoria do Servidor Público vinculado a um Regime Próprio de Previdência como no Estado do Paraná ou São Paulo.</p>
+            <h5>Veja Nossos Posts e Vídeos:</h5>
+        </details>
+      </form>
+    </div>
+
+
+
+    <div id="prev-options-atc-tc" class="">
+      <h2>Aposentadoria Por Tempo de Contribuição ou Regras de Transição - Detalhes</h2>
+      
+        
+        <p>Para analisarmos seu pedido de aposentadoria, nos envie o seu Extrato Previdenciário - CNIS</p>
+
+        <p>Confira <href>aqui</href> como consultar seu CNIS pelo Meu INSS e obter suas informações previdenciárias</p>
+        
+        <p>Em caso de dúvidas, você receberá um e-mail ou um formulário adicional</p>
+
+
+      <form id="cnisUpload">
+        <input type="file" id="myFile" name="filename">
+      </form>
+    </div>
+
+
+    <div id="prev-options-atc-aid" class="">
+      <h2>Aposentadoria Por Idade</h2>
+      
+        <p>A aposentadoria por idade acontecia quando o segurado não conseguia completar o tempo de contribuição.</p>
+        
+        <p>Até 13 de novembro de 2019, era preciso 60 anos de idade para a mulher e 65 anos de idade para o homem.</p>
+
+        <p>Com tempo mínimo de contribuição de 15 anos para ambos.</p>
+
+        <p>Atualmente a regra é de 62 anos para mulher e 65 para o homem, com os mesmos 15 anos de contribuição, exceto para o homem que iniciou os pagamento a pós 13/11/2019 (Reforma da Previdência).</p>
+
+        <p>Para analisarmos seu pedido de aposentadoria, nos envie o seu Extrato Previdenciário - CNIS</p>
+
+        <p>Confira <href>aqui</href> como consultar seu CNIS pelo Meu INSS e obter suas informações previdenciárias</p>
+        
+        <p>Em caso de dúvidas, você receberá um e-mail ou um formulário adicional</p>
+
+      <form id="cnisUpload">
+        <input type="file" id="myFile" name="filename">
+      </form>
+    </div>
+
+
+  <div id="prev-options-pm" class="">
+
+      <h1>Pensão Por Morte</h1>
+      <form id="prev-options-pm-uniao-form-group">
+        <h2>Qual era o tipo de relacionamento entre você e o falecido?</h2>
+        <input type="radio" id="dpu" name="prev-options-pm-uniao" value="casamento" />
+        <label for="dpu">Casamento</label><br />
+        <input type="radio" id="ues" name="prev-options-pm-uniao" value="uniaoestavel" />
+        <label for="ues">União Estável</label><br />
+        <input type="radio" id="divorciado-dep" name="prev-options-pm-uniao" value="divorciado-dep" />
+        <label for="divorciado-dep">Divorciado Com Pensão ou Dependência Econômica</label><br />
+        <input type="radio" id="divorciado-nao-dep" name="prev-options-pm-uniao" value="divorciado-nao-dep" />
+        <label for="divorciado-nao-dep">Divorciado Sem Pensão ou Dependência Econômica</label><br />
+        <input type="radio" id="sep" name="prev-options-pm-uniao" value="sep" />
+        <label for="divorciado">Separado de Fato</label><br />
+      </form>    
+
+      <form id="prev-options-pm-qualsegurado-form-group">
+        <h2>Qual era a situação do falecido perante o INSS?</h2>
+        <input type="radio" id="ctps" name="prev-options-pm-qualsegurado" value="ctps" />
+        <label for="ctps">Trabalhador com Registro</label><br />
+        <input type="radio" id="semCtps" name="prev-options-pm-qualsegurado" value="semCtps" />
+        <label for="semCtps">Trabalhador Sem Registro</label><br />
+        <input type="radio" id="desempregado" name="prev-options-pm-qualsegurado" value="desempregado" />
+        <label for="desempregado">Desempregado</label><br />
+        <input type="radio" id="ci" name="prev-options-pm-qualsegurado" value="ci" />
+        <label for="ci">Contribuinte Individual - Autônomo - Empresário</label><br />
+        <input type="radio" id="rural" name="prev-options-pm-qualsegurado" value="rural" />
+        <label for="rural">Rural</label><br />
+      </form>   
+    </div>
+
+
+    <div id="prev-options-inc-ai" class="">
+      <h1>Benefícios Por Incapacidade</h1>
+      <form id="prev-options-inc-ai-form-group">
+        <input type="radio" id="prev-options-inc-ai-di" name="prev-options-inc-ai" value="prev-options-inc-ai-di" />
+        <label for="prev-options-inc-ai-di">Auxílio Doença ou Incapacidade</label><br />
+        <details>
+          <summary>Saiba Mais</summary>
+            <p>Incapacidade Temporária: Quando o trabalhador está temporariamente incapacitado para o trabalho.</p>
+            <p>Incapacidade Permanente: Quando existe uma incapacidade permanente que não permite o retorno ao trabalho.</p>
+            <h5>Veja Nossos Posts e Vídeos:</h5>
+        </details>
+        <input type="radio" id="prev-options-inc-ai-loas" name="prev-options-inc-ai" value="prev-options-inc-ai-loas" />
+        <label for="prev-options-inc-ai-loas">Benefício de Prestação Continuada - Loas - BPC</label><br />
+        <details>
+          <summary>Saiba Mais</summary>
+            <p>Benefício para pessoas com deficiência grave ou pessoa idosa (mais de 65) anos com renda familiar em extrema baixa renda.</p>
+        </details>
+        <input type="radio" id="prev-options-inc-ai-aa" name="prev-options-inc-ai" value="prev-options-inc-ai-aa" />
+        <label for="prev-options-inc-ai-aa">Auxílio Acidente</label><br />
+        <details>
+          <summary>Saiba Mais</summary>
+            <p>Para quem sofreu uma lesão decorrente de acidente de qualquer tipo (de trabalho ou não) e precisa comprovar a consolidação das lesões para conseguir um benefício permanente.</p>
+        </details>
+      </form>
+    </div>
+
+
+<!-- Auxílio Acidente Permanente Condicional -->
+    <div id="prev-options-auxa" class="">
+      <h1>Auxílio Acidente Permanente</h1>
+      <form id="prev-options-auxa-form-group">
+        <input type="radio" id="prev-options-auxa" name="prev-options-auxa" value="prev-options-auxa" />
+        <label for="prev-options-auxa">Auxílio Doença Permanente</label><br />
+        <details>
+          <summary>Saiba Mais</summary>
+            <p>Auxílio para quem perdeu a capacidade laborativa parcial, porém, pode continuar trabalhando com essas limitações.</p>
+            <h5>Veja Nossos Posts e Vídeos:</h5>
+        </details>
+      </form>
+    </div>
+
+    <div id="prev-options-inc-form-group" class="">
+      <h1>Aposentadoria</h1>
+      <form id="prev-options-inc">
+
+
+  
+
+    <div id="client-f1" class="">
+      <h1>Dados Do CLiente</h1>
+      <form id="client-f1-form-group">
+        <label for="client-name">Nome:</label><br />
+        <input type="text" id="client-name" name="client-f1" value="client-name" />
+       
+        <label for="client-lastname">Sobrenome:</label><br />
+        <input type="text" id="client-lastname" name="client-f1" value="client-lastname" />
+       
+        <label for="client-email">E-mail:</label><br />
+        <input type="text" id="client-email" name="client-f1" value="client-email" />
+       
+        <label for="client-phone">Telefone:</label><br />
+        <input type="text" id="client-phone" name="client-f1" value="client-phone" />
+
+      </form>
+    </div>
+
+    <div id="client-f2" class="hidden">
+      <h1>Dados Do CLiente</h1>
+      <form id="client-f2-form-group">
+        <label for="client-name">Nome:</label><br />
+        <input type="text" id="client-name" name="client-f2" value="client-name" />
+        <p></p>
+        <label for="client-lastname">Sobrenome:</label><br />
+        <input type="text" id="client-lastname" name="client-f2" value="client-lastname" />
+        <p></p>
+        <label for="client-email">E-mail:</label><br />
+        <input type="text" id="client-email" name="client-f2" value="client-email" />
+        <p></p>
+        <label for="client-phone">Telefone:</label><br />
+        <input type="text" id="client-phone" name="client-f2" value="client-phone" />
+      
+        <h1>Dados do Cliente F2</h1>
+        
+        Dados Bancários?:
+        Número do Benefício:? 
+        RG: 
+        CPF: 
+        Naturalidade: 
+        Profissão:
+        Gênero:
+        Nascimento:
+        Nome da Mãe:
+        CEP:
+        Endereço:
+        Cidade:
+        Estado:
+        Representando Incapaz:
+
+      </form>
+    </div>
+
+
+
+    <h1>LGPD</h1>
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
