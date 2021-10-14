@@ -1,5 +1,8 @@
 como usar dois arquivos de js no HTML? 
 
-<script src="index.js"></script>
+    <script src="index.js"></script>
+    <script src="teste.js"></script>
  
- e o arquivo teste.js ? 
+- Criar uma linha para cada arquivo.js;
+- Lembrar que a ordem importa;
+- Head: Executa antes do Body;
