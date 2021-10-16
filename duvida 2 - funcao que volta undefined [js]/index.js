@@ -21,16 +21,29 @@ for(var indice = 0; indice < radioSelect.length; indice++) {
       console.log(`Checkbox ON = ${this.checked} ${this.value}`);
     }
     switch (this.value) {
-      case 'prev': document.getElementById('prev-options').style.cssText = 'visibility: visible;';
-                   document.getElementById('prev-options').style.cssText = 'visibility: visible;';
-                   document.getElementById('prev-options').style.cssText = 'visibility: visible;';
-                   document.getElementById('prev-options').style.cssText = 'visibility: visible;';
+      case 'prev': document.getElementById('prev-options').style.cssText = 'display: block;';
+                   document.getElementById('civ-options').style.cssText = 'display: none;';
+                   document.getElementById('tri-options').style.cssText = 'display: none;';
+                   document.getElementById('adm-options').style.cssText = 'display: none;';
       break;
-      case 'prev': document.getElementById('prev-options').style.cssText = 'visibility: visible;';
+
+      case 'civ': document.getElementById('prev-options').style.cssText = 'display: none;';
+                  document.getElementById('civ-options').style.cssText = 'display: block';
+                  document.getElementById('tri-options').style.cssText = 'display: none;';
+                  document.getElementById('adm-options').style.cssText = 'display: none;';
       break;
-      case 'prev': document.getElementById('prev-options').style.cssText = 'visibility: visible;';
+
+      case 'tri': document.getElementById('prev-options').style.cssText = 'display: none;';
+                  document.getElementById('civ-options').style.cssText = 'display: none';
+                  document.getElementById('tri-options').style.cssText = 'display: block;';
+                  document.getElementById('adm-options').style.cssText = 'display: none;';
       break;
-      case 'prev': document.getElementById('prev-options').style.cssText = 'visibility: visible;';
+
+      case 'adm': document.getElementById('prev-options').style.cssText = 'display: none;';
+                  document.getElementById('civ-options').style.cssText = 'display: none';
+                  document.getElementById('tri-options').style.cssText = 'display: none;';
+                  document.getElementById('adm-options').style.cssText = 'display: block;';
+      break;
     }
   })
 }
