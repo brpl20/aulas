@@ -28,3 +28,16 @@ for(var indice = 0; indice < radioSelect.length; indice++) {
 
 // ver o buraco 
 // dif. display none etc 
+
+let form1 = ["Opções do Direito Previdenciário"];
+let form1Options = ["Previdenciário", "Cível", "Tributário", "Administrativo"];
+let form1Skeleton = function (header) {
+  `<h1>${header}</h1>`
+};
+let startingPoint = document.getElementById("starting");
+
+// for each
+for(let item of form1)
+  startingPoint.insertAdjacentHTML('afterend', form1Skeleton(form1));
+
+

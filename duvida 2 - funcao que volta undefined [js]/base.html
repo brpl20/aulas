@@ -14,7 +14,7 @@
     <h1>Formulário de Ação</h1>
     <div id="action">
       <form id="action-form-group">
-        <input type="radio" id="prev" name="action" value="prev" checked />
+        <input type="radio" id="prev" name="action" value="prev" />
         <label for="prev">Previdenciário</label><br />
         <input type="radio" id="civ" name="action" value="civ" />
         <label for="civ">Cível</label><br />
@@ -38,28 +38,26 @@
         <label for="pensao">Pensao Por Morte</label><br />
         <input type="radio" id="inc" name="prev-options" value="inc" />
         <label for="inc">Benefícios por Incapacidade (Auxílio Doença - Invalidez - Loas/BPC)</label><br />
-        <input type="radio" id="auxa" name="prev-options" value="auxilioAcidente" />
-        <label for="auxa">Auxílio Acidente Permanente</label><br />
-        <input type="radio" id="cons" name="prev-options" value="consulta" />
-        <label for="cons">Consulta - Agendamento - Dúvidas - Cálculos</label><br />
+        <input type="radio" id="aac" name="prev-options" value="aac" />
+        <label for="aac">Auxílio Acidente Permanente</label><br />
+        <input type="radio" id="cons" name="prev-options" value="cons" />
+        <label for="cons">Consulta - Agendamento - Dúvidas - Cálculos - Planejamento - Outros</label><br />
       </form>
     </div>
 
 
 
     <div id="civ-options" style="display: none">
-      <h1>Direito Cívil</h1>
+      <h1>Direito Civil</h1>
       <form id="civ-options-form-group">
-        <input type="radio" id="atc" name="civ-options" value="atc" />
-        <label for="aposentadoria">Aposentadoria</label><br />
-        <input type="radio" id="ppm" name="civ-options" value="ppm" />
-        <label for="pensao">Pensao Por Morte</label><br />
-        <input type="radio" id="inc" name="civ-options" value="inc" />
-        <label for="inc">Benefícios por Incapacidade (Auxílio Doença - Invalidez - Loas/BPC)</label><br />
-        <input type="radio" id="auxa" name="civ-options" value="auxilioAcidente" />
-        <label for="auxa">Auxílio Acidente Permanente</label><br />
-        <input type="radio" id="cons" name="civ-options" value="consulta" />
-        <label for="cons">Consulta - Agendamento - Dúvidas - Cálculos</label><br />
+        <input type="radio" id="civ-cons" name="civ-options" value="civ-cons" />
+        <label for="consumidor">Consumidor</label><br />
+        <input type="radio" id="civ-familia" name="civ-options" value="civ-familia" />
+        <label for="familia">Família</label><br />
+        <input type="radio" id="civ-indenizacoes" name="civ-options" value="civ-indenizacoes" />
+        <label for="indenizacoes">Indenizações</label><br />
+        <input type="radio" id="civ-outros" name="civ-options" value="civ-outros" />
+        <label for="outros">Outros Assuntos</label><br />
       </form>
     </div>
 
@@ -67,32 +65,28 @@
     <div id="tri-options" style="display: none">
       <h1>Direito Tributario</h1>
       <form id="tri-options-form-group">
-        <input type="radio" id="atc" name="tri-options" value="atc" />
-        <label for="aposentadoria">Aposentadoria</label><br />
-        <input type="radio" id="ppm" name="tri-options" value="ppm" />
-        <label for="pensao">Pensao Por Morte</label><br />
-        <input type="radio" id="inc" name="tri-options" value="inc" />
-        <label for="inc">Benefícios por Incapacidade (Auxílio Doença - Invalidez - Loas/BPC)</label><br />
-        <input type="radio" id="auxa" name="tri-options" value="auxilioAcidente" />
-        <label for="auxa">Auxílio Acidente Permanente</label><br />
-        <input type="radio" id="cons" name="tri-options" value="consulta" />
-        <label for="cons">Consulta - Agendamento - Dúvidas - Cálculos</label><br />
+        <input type="radio" id="tri-cm" name="tri-options" value="tri-cm" />
+        <label for="cm">Contribuição de Melhoria - Asfalto</label><br />
+        <input type="radio" id="tri-piscofins" name="tri-options" value="tri-piscofins" />
+        <label for="piscofins">Pis Cofins</label><br />
+        <input type="radio" id="tri-outros" name="tri-options" value="tri-outros" />
+        <label for="outros">Outros Assuntos</label><br />
       </form>
     </div>
 
     <div id="adm-options" style="display: none">
       <h1>Direito Administrativo</h1>
       <form id="adm-options-form-group">
-        <input type="radio" id="atc" name="adm-options" value="atc" />
-        <label for="aposentadoria">Aposentadoria</label><br />
-        <input type="radio" id="ppm" name="adm-options" value="ppm" />
-        <label for="pensao">Pensao Por Morte</label><br />
-        <input type="radio" id="inc" name="adm-options" value="inc" />
-        <label for="inc">Benefícios por Incapacidade (Auxílio Doença - Invalidez - Loas/BPC)</label><br />
-        <input type="radio" id="auxa" name="adm-options" value="auxilioAcidente" />
-        <label for="auxa">Auxílio Acidente Permanente</label><br />
-        <input type="radio" id="cons" name="adm-options" value="consulta" />
-        <label for="cons">Consulta - Agendamento - Dúvidas - Cálculos</label><br />
+        <input type="radio" id="adm-horasextras" name="adm-options" value="adm-horasextras" />
+        <label for="horasextras">Horas Extras</label><br />
+        <input type="radio" id="adm-licencapremio" name="adm-options" value="adm-licencapremio" />
+        <label for="licencapremio">Licença Prêmio</label><br />
+        <input type="radio" id="adm-adicionalfronteira" name="adm-options" value="adm-adicionalfronteira" />
+        <label for="adm-adicionalfronteira">Adicional de Fronteira</label><br />
+        <input type="radio" id="adm-insalubreperigoso" name="adm-options" value="adm-insalubreperigoso" />
+        <label for="insalubreperigoso">Adicional de Insalubridade ou Periculosidade</label><br />
+        <input type="radio" id="adm-outros" name="adm-options" value="adm-outros" />
+        <label for="outros">Outros Assuntos</label><br />
       </form>
     </div>
 
@@ -102,7 +96,7 @@
 
 
 
-    <div id="prev-options-atc-form-group" class="">
+    <div id="prev-options-atc-form-group" style="display: none">
       <h1>Aposentadoria</h1>
       <form id="prev-options-atc">
         <input type="radio" id="atc-tc" name="prev-options-atc" value="atc-tc" />
@@ -146,7 +140,7 @@
 
 
 
-    <div id="prev-options-atc-tc" class="">
+    <div id="prev-options-atc-tc" style="display: none">
       <h2>Aposentadoria Por Tempo de Contribuição ou Regras de Transição - Detalhes</h2>
       
         
@@ -163,7 +157,7 @@
     </div>
 
 
-    <div id="prev-options-atc-aid" class="">
+    <div id="prev-options-atc-aid" style="display: none">
       <h2>Aposentadoria Por Idade</h2>
       
         <p>A aposentadoria por idade acontecia quando o segurado não conseguia completar o tempo de contribuição.</p>
@@ -186,7 +180,7 @@
     </div>
 
 
-  <div id="prev-options-pm" class="">
+  <div id="prev-options-pm" style="display: none">
 
       <h1>Pensão Por Morte</h1>
       <form id="prev-options-pm-uniao-form-group">
@@ -219,7 +213,7 @@
     </div>
 
 
-    <div id="prev-options-inc-ai" class="">
+    <div id="prev-options-inc-ai" style="display: none">
       <h1>Benefícios Por Incapacidade</h1>
       <form id="prev-options-inc-ai-form-group">
         <input type="radio" id="prev-options-inc-ai-di" name="prev-options-inc-ai" value="prev-options-inc-ai-di" />
@@ -247,11 +241,11 @@
 
 
 <!-- Auxílio Acidente Permanente Condicional -->
-    <div id="prev-options-auxa" class="">
+    <div id="prev-options-aac" style="display: none">
       <h1>Auxílio Acidente Permanente</h1>
-      <form id="prev-options-auxa-form-group">
-        <input type="radio" id="prev-options-auxa" name="prev-options-auxa" value="prev-options-auxa" />
-        <label for="prev-options-auxa">Auxílio Doença Permanente</label><br />
+      <form id="prev-options-aac-form-group">
+        <input type="radio" id="prev-options-aac" name="prev-options-aac" value="prev-options-aac" />
+        <label for="prev-options-aac">Auxílio Acidente Permanente</label><br />
         <details>
           <summary>Saiba Mais</summary>
             <p>Auxílio para quem perdeu a capacidade laborativa parcial, porém, pode continuar trabalhando com essas limitações.</p>
@@ -260,14 +254,22 @@
       </form>
     </div>
 
-    <div id="prev-options-inc-form-group" class="">
-      <h1>Aposentadoria</h1>
-      <form id="prev-options-inc">
 
-
+    <div id="prev-options-outros" style="display: none">
+      <h1>Outros</h1>
+      <form id="prev-options-aac-form-group">
+        <input type="radio" id="prev-options-aac" name="prev-options-aac" value="prev-options-aac" />
+        <label for="prev-options-aac">Auxílio Acidente Permanente</label><br />
+        <details>
+          <summary>Saiba Mais</summary>
+            <p>Auxílio para quem perdeu a capacidade laborativa parcial, porém, pode continuar trabalhando com essas limitações.</p>
+            <h5>Veja Nossos Posts e Vídeos:</h5>
+        </details>
+      </form>
+    </div>
   
 
-    <div id="client-f1" class="">
+    <div id="client-f1" style="display: none">
       <h1>Dados Do CLiente</h1>
       <form id="client-f1-form-group">
         <label for="client-name">Nome:</label><br />
@@ -285,7 +287,14 @@
       </form>
     </div>
 
-    <div id="client-f2" class="hidden">
+
+ <label for="consulta">Consulta:</label>
+  <textarea id="consulta" name="consulta" rows="4" cols="50">
+    Descreva sua situação e em seguida seus dados de contato que logo agendaremos um horário para atendimento:
+  </textarea>
+
+
+    <div id="client-f2" style="display: none">
       <h1>Dados Do CLiente</h1>
       <form id="client-f2-form-group">
         <label for="client-name">Nome:</label><br />
@@ -322,7 +331,7 @@
 
 
 
-    <h1>LGPD</h1>
+    <h1 style="display: none">LGPD</h1>
 
 
     <script src="index.js"></script>

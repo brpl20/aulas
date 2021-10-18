@@ -1,16 +1,8 @@
 "use strict";
 
-let form1 = ["Opções do Direito Previdenciário"];
-let form1Options = ["Previdenciário", "Cível", "Tributário", "Administrativo"];
-let form1Skeleton = function (header) {
-  `<h1>${header}</h1>`
-};
-let startingPoint = document.getElementById("starting");
 var radioSelect = document.getElementsByName("action");
+var radioSelectPrev = document.getElementsByName("prev-options");
 
-// for each
-for(let item of form1)
-  startingPoint.insertAdjacentHTML('afterend', form1Skeleton(form1));
 
 // for normal
 // quando importante índice
@@ -48,6 +40,40 @@ for(var indice = 0; indice < radioSelect.length; indice++) {
   })
 }
 
+for(var indice = 0; indice < radioSelectPrev.length; indice++) {
+  radioSelectPrev[indice].addEventListener('change', function () {
+    if (this.checked) {
+      console.log(`Checkbox ON = ${this.checked} ${this.value}`);
+    }
+    switch (this.value) {
+      case 'atc':  document.getElementById('prev-options-atc-form-group').style.cssText = 'display: block;';
+                   document.getElementById('prev-options-pm').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-inc-ai').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-aac').style.cssText = 'display: none;';
+      break;
+
+      case 'ppm':  document.getElementById('prev-options-atc-form-group').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-pm').style.cssText = 'display: block;';
+                   document.getElementById('prev-options-inc-ai').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-aac').style.cssText = 'display: none;';
+      break;
+
+      case 'inc':  document.getElementById('prev-options-atc-form-group').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-pm').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-inc-ai').style.cssText = 'display: block;';
+                   document.getElementById('prev-options-aac').style.cssText = 'display: none;';
+      break;
+
+      case 'aac':  document.getElementById('prev-options-atc-form-group').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-pm').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-inc-ai').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-aac').style.cssText = 'display: block;';
+      break;
+      case 'cons': window.location.href = "https://calendly.com/brpl"
+      break;
+    }
+  })
+}
 
 
 /*
