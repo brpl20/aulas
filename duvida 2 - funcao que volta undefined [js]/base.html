@@ -28,11 +28,12 @@
 
     <h1 id="starting"></h1>
 
+    <!-- AREAS DO DIREITO  -->
 
     <div id="prev-options" style="display: none">
       <h1>Previdenciário</h1>
       <form id="prev-options-form-group">
-        <input type="radio" id="atc" name="prev-options" value="atc" />
+        <input type="radio" id="aposenta" name="prev-options" value="aposenta" />
         <label for="aposentadoria">Aposentadoria</label><br />
         <input type="radio" id="ppm" name="prev-options" value="ppm" />
         <label for="pensao">Pensao Por Morte</label><br />
@@ -90,17 +91,15 @@
       </form>
     </div>
 
+    <!-- SUBAREA DO DIREITO PREVIDENCIARIO  -->
 
+    <!-- SUBAREA DO DIREITO PREVIDENCIARIO : APOSENTADORIA  -->
 
-
-
-
-
-    <div id="prev-options-atc-form-group" style="display: none">
+    <div id="prev-options-aposenta-form-group" style="display: none">
       <h1>Aposentadoria</h1>
-      <form id="prev-options-atc">
-        <input type="radio" id="atc-tc" name="prev-options-atc" value="atc-tc" />
-        <label for="atc-tc">Aposentadoria Por Tempo De Contribuição ou Regras de Transição</label><br />
+      <form id="prev-options-aposenta">
+        <input type="radio" id="aposenta-atc" name="prev-options-aposenta" value="aposenta-atc" />
+        <label for="aposenta-tc">Aposentadoria Por Tempo De Contribuição ou Regras de Transição</label><br />
           <details >
             <summary>Saiba Mais</summary>
               <p>Pedágio 50%: ...</p>
@@ -108,28 +107,28 @@
               <p>Professor: ...</p>
               <h5>Veja Nossos Posts e Vídeos:</h5>
           </details>
-        <input type="radio" id="atc-aid" name="prev-options-atc" value="atc-aid" />
-        <label for="atc-aid">Aposentadoria Por Idade</label><br />
+        <input type="radio" id="aposenta-aid" name="prev-options-aposenta" value="aposenta-aid" />
+        <label for="aposenta-aid">Aposentadoria Por Idade</label><br />
           <details >
             <summary>Saiba Mais</summary>
               <h5>Veja Nossos Posts e Vídeos:</h5>
           </details>
-        <input type="radio" id="atc-esp" name="prev-options-atc" value="atc-esp" />
-        <label for="atc-esp">Aposentadoria Especial</label><br />
+        <input type="radio" id="aposenta-esp" name="prev-options-aposenta" value="aposenta-esp" />
+        <label for="aposenta-esp">Aposentadoria Especial</label><br />
          <details >
            <summary>Saiba Mais</summary>
              <p>Aposentadoria especial é aquela devida a trabalhadores que são expostos a atividades insalubres ou perigosas, reduzindo-se o tempo mínimo de contribuição para aposentadoria e a idade.</p>
              <h5>Veja Nossos Posts e Vídeos:</h5>
          </details>
-        <input type="radio" id="atc-rur" name="prev-options-atc" value="atc-rur" />
-        <label for="atc-rur">Aposentadoria Rural</label><br />
+        <input type="radio" id="aposenta-rur" name="prev-options-aposenta" value="aposenta-rur" />
+        <label for="aposenta-rur">Aposentadoria Rural</label><br />
           <details>
             <summary>Saiba Mais</summary>
               <p>Aposentadoria do Trabalhador Rural é aquela devida aos pequenos produtores rurais em regime de economia familiar, ou com reconhecimento de tempo parcial para utilização na aposentadoria normal. </p>
               <h5>Veja Nossos Posts e Vídeos:</h5>
           </details>
-        <input type="radio" id="atc-servidor" name="prev-options-atc" value="atc-servidor" />
-        <label for="atc-servidor">Aposentadoria Servidor Público</label><br />
+        <input type="radio" id="aposenta-servidor" name="prev-options-aposenta" value="aposenta-servidor" />
+        <label for="aposenta-servidor">Aposentadoria Servidor Público</label><br />
         <details>  
           <summary>Saiba Mais</summary>
             <p>Aposentadoria do Servidor Público vinculado a um Regime Próprio de Previdência como no Estado do Paraná ou São Paulo.</p>
@@ -138,25 +137,26 @@
       </form>
     </div>
 
+    <!-- SUBAREA DO DIREITO PREVIDENCIARIO : APOSENTADORIA  -->
 
-
-    <div id="prev-options-atc-tc" style="display: none">
+   <div id="prev-options-atc-tc" style="display: none">
       <h2>Aposentadoria Por Tempo de Contribuição ou Regras de Transição - Detalhes</h2>
-      
-        
+
         <p>Para analisarmos seu pedido de aposentadoria, nos envie o seu Extrato Previdenciário - CNIS</p>
 
         <p>Confira <href>aqui</href> como consultar seu CNIS pelo Meu INSS e obter suas informações previdenciárias</p>
-        
+
         <p>Em caso de dúvidas, você receberá um e-mail ou um formulário adicional</p>
 
 
-      <form id="cnisUpload">
+    <!-- FORM GENERICO DE UPLOAD CNIS -->
+      <form id="cnisUploadErr">
         <input type="file" id="myFile" name="filename">
       </form>
     </div>
 
 
+    <!-- APOSENTADORIA POR IDADE  -->
     <div id="prev-options-atc-aid" style="display: none">
       <h2>Aposentadoria Por Idade</h2>
       
@@ -239,6 +239,54 @@
       </form>
     </div>
 
+    <!-- APOSENTADORIA ESPECIAL -->
+    <div id="aposenta-esp-div" style="display: none">
+      <h1>Aposentadoria Espeical</h1>
+      <form id="prev-options-aposenta-esp-form-group">
+        <input type="radio" id="prev-options-aposenta-esp" name="prev-options-aposenta-esp" value="prev-options-aposenta-esp" />
+        <label for="prev-options-aposenta-esp">Aposentadoria Especial</label><br />
+        <input type="radio" id="prev-options-inc-ai-loas" name="prev-options-aposenta-esp" value="prev-options-inc-ai-loas" />
+        <label for="prev-options-inc-ai-loas">Benefício de Prestação Continuada - Loas - BPC</label><br />
+        <details>
+          <summary>Saiba Mais</summary>
+            <p>Detalhes Sobre o Benefício de Aposentadoria Especial</p>
+        </details>
+      </form>
+    </div>
+
+
+    <!-- APOSENTADORIA RURAL -->
+    <div id="prev-options-aposenta-rur-div" style="display: none">
+      <h1>Aposentadoria Rural</h1>
+      <form id="prev-options-aposenta-rur-form-group">
+        <input type="radio" id="prev-options-aposenta-rur" name="prev-options-aposenta-rur" value="prev-options-aposenta-rur" />
+        <label for="prev-options-aposenta-rur">Aposentadoria Rural</label><br />
+        <input type="radio" id="prev-options-inc-ai-loas" name="prev-options-aposenta-rur" value="prev-options-inc-ai-loas" />
+        <label for="prev-options-inc-ai-loas">??</label><br />
+        <details>
+          <summary>Saiba Mais</summary>
+            <p>Detalhes Sobre o Benefício de Aposentadoria Especial</p>
+        </details>
+      </form>
+    </div>
+
+
+
+    <!-- APOSENTADORIA SERVIDOR -->
+    <div id="prev-options-aposentaservidor" style="display: none">
+      <h1>Aposentadoria Servidor</h1>
+      <form id="prev-options-aposentaservidor-form-group">
+        <input type="radio" id="prev-options-aposentaservidor-ipmc" name="prev-options-aposentaservidor" value="prev-options-aposentaservidor-ipmc" />
+        <label for="prev-options-aposenta-rur">Aposentadoria IPMC</label><br />
+        <input type="radio" id="prev-options-aposentaservidor-prprev" name="prev-options-aposentaservidor" value="prev-options-aposentaservidor-prprev" />
+        <label for="prev-options-inc-ai-loas">Aposentadoria Estado Do Paraná</label><br />
+        <details>
+          <summary>Saiba Mais</summary>
+            <p>Detalhes Sobre o Benefício de Aposentadoria Servidor Público</p>
+        </details>
+      </form>
+    </div>
+
 
 <!-- Auxílio Acidente Permanente Condicional -->
     <div id="prev-options-aac" style="display: none">
@@ -287,12 +335,12 @@
       </form>
     </div>
 
-
+<div style="display: none">
  <label for="consulta">Consulta:</label>
   <textarea id="consulta" name="consulta" rows="4" cols="50">
     Descreva sua situação e em seguida seus dados de contato que logo agendaremos um horário para atendimento:
   </textarea>
-
+</div>
 
     <div id="client-f2" style="display: none">
       <h1>Dados Do CLiente</h1>
@@ -326,6 +374,22 @@
         Estado:
         Representando Incapaz:
 
+      </form>
+    </div>
+
+    <!-- FORM GENERICO DE UPLOAD CNIS -->
+   <div id="cnisUpload" style="display: none">
+      <h2>Aposentadoria Por Tempo de Contribuição ou Regras de Transição - Detalhes</h2>
+
+        <p>Para analisarmos seu pedido de aposentadoria, nos envie o seu Extrato Previdenciário - CNIS</p>
+
+        <p>Confira <href>aqui</href> como consultar seu CNIS pelo Meu INSS e obter suas informações previdenciárias</p>
+
+        <p>Em caso de dúvidas, você receberá um e-mail ou um formulário adicional</p>
+
+
+      <form id="cnisUpload">
+        <input type="file" id="myFile" name="filename">
       </form>
     </div>
 

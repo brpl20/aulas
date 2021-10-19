@@ -2,7 +2,23 @@
 
 var radioSelect = document.getElementsByName("action");
 var radioSelectPrev = document.getElementsByName("prev-options");
+var radioSelectPrevAposenta = document.getElementsByName("prev-options-aposenta");
 
+// confirmacao
+
+function confirm()
+{
+var x;
+var r=confirm("Escolha um valor!");
+if (r==true)
+  {
+  x="você pressionou OK!";
+  }
+else
+  {
+  x="Você pressionou Cancelar!";
+  }
+}
 
 // for normal
 // quando importante índice
@@ -46,34 +62,93 @@ for(var indice = 0; indice < radioSelectPrev.length; indice++) {
       console.log(`Checkbox ON = ${this.checked} ${this.value}`);
     }
     switch (this.value) {
-      case 'atc':  document.getElementById('prev-options-atc-form-group').style.cssText = 'display: block;';
+      case 'aposenta':  document.getElementById('prev-options-aposenta-form-group').style.cssText = 'display: block;';
                    document.getElementById('prev-options-pm').style.cssText = 'display: none;';
                    document.getElementById('prev-options-inc-ai').style.cssText = 'display: none;';
                    document.getElementById('prev-options-aac').style.cssText = 'display: none;';
       break;
 
-      case 'ppm':  document.getElementById('prev-options-atc-form-group').style.cssText = 'display: none;';
+      case 'ppm':  document.getElementById('prev-options-aposenta-form-group').style.cssText = 'display: none;';
                    document.getElementById('prev-options-pm').style.cssText = 'display: block;';
                    document.getElementById('prev-options-inc-ai').style.cssText = 'display: none;';
                    document.getElementById('prev-options-aac').style.cssText = 'display: none;';
       break;
 
-      case 'inc':  document.getElementById('prev-options-atc-form-group').style.cssText = 'display: none;';
+      case 'inc':  document.getElementById('prev-options-aposenta-form-group').style.cssText = 'display: none;';
                    document.getElementById('prev-options-pm').style.cssText = 'display: none;';
                    document.getElementById('prev-options-inc-ai').style.cssText = 'display: block;';
                    document.getElementById('prev-options-aac').style.cssText = 'display: none;';
       break;
 
-      case 'aac':  document.getElementById('prev-options-atc-form-group').style.cssText = 'display: none;';
+      case 'aac':  document.getElementById('prev-options-aposenta-form-group').style.cssText = 'display: none;';
                    document.getElementById('prev-options-pm').style.cssText = 'display: none;';
                    document.getElementById('prev-options-inc-ai').style.cssText = 'display: none;';
                    document.getElementById('prev-options-aac').style.cssText = 'display: block;';
       break;
-      case 'cons': window.location.href = "https://calendly.com/brpl"
+                  document.getElementById('prev-options-aposenta-form-group').style.cssText = 'display: none;';
+                  document.getElementById('prev-options-pm').style.cssText = 'display: none;';
+                  document.getElementById('prev-options-inc-ai').style.cssText = 'display: none;';
+                  document.getElementById('prev-options-aac').style.cssText = 'display: none;';
+      case 'cons': alert("Você será redirecionado a página de atendimento"); window.location.href = "https://calendly.com/brpl"
       break;
     }
   })
 }
+
+
+for(var indice = 0; indice < radioSelectPrevAposenta.length; indice++) {
+  radioSelectPrevAposenta[indice].addEventListener('change', function () {
+    if (this.checked) {
+      console.log(`Checkbox ON = ${this.checked} ${this.value}`);
+    }
+    switch (this.value) {
+      case 'aposenta-atc':  document.getElementById('prev-options-atc-tc').style.cssText = 'display: block;';
+                   document.getElementById('prev-options-atc-aid').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-aac').style.cssText = 'display: none;';
+                   document.getElementById('aposenta-esp-div').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-aposenta-rur-div').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-aposentaservidor').style.cssText = 'display: none;';
+      break;
+
+      case 'aposenta-aid':  document.getElementById('prev-options-atc-tc').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-atc-aid').style.cssText = 'display: block;';
+                   document.getElementById('prev-options-aac').style.cssText = 'display: none;';
+                   document.getElementById('aposenta-esp-div').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-aposenta-rur-div').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-aposentaservidor').style.cssText = 'display: none;';
+      break;
+
+      case 'aposenta-esp':  document.getElementById('prev-options-atc-tc').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-atc-aid').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-aac').style.cssText = 'display: none;';
+                   document.getElementById('aposenta-esp-div').style.cssText = 'display: block;';
+                   document.getElementById('prev-options-aposenta-rur-div').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-aposentaservidor').style.cssText = 'display: none;';
+      break;
+
+      case 'aposenta-rur':  document.getElementById('prev-options-atc-tc').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-atc-aid').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-aac').style.cssText = 'display: none;';
+                   document.getElementById('aposenta-esp-div').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-aposenta-rur-div').style.cssText = 'display: block;';
+                   document.getElementById('prev-options-aposentaservidor').style.cssText = 'display: none;';
+      break;
+
+      case 'aposenta-servidor':  document.getElementById('prev-options-atc-tc').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-atc-aid').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-aac').style.cssText = 'display: none;';
+                   document.getElementById('aposenta-esp-div').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-aposenta-rur-div').style.cssText = 'display: none;';
+                   document.getElementById('prev-options-aposentaservidor').style.cssText = 'display: block;';
+      break;
+
+    }
+  })
+}
+
+
+
+
 
 
 /*
