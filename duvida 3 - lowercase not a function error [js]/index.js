@@ -7,12 +7,14 @@ let form1Skeleton = function (header) {
 };
 
 let form1SkeletonOptions = function (item, tipe) {
-  let itemId = item.toLowerCase.substring(0, 4)
+  let itemId = item.toString();
+  console.log(itemId.toLowerCase().substring(0,4)); // CUIDAR COM OS PARENTESES
   return `
       <input type="${tipe}" id="${itemId}" name="${itemId}-options" value="atc" />
       <label for="aposentadoria">Aposentadoria</label><br />
   `
 };
+
 
 
 let startingPoint = document.getElementById("starting");

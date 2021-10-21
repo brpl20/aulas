@@ -168,3 +168,4 @@ item.addEventListener('change', function() {
 // Se colocar return antes da function funciona...
 // Creio que deveria usar outra função aqui, tipo arrow?
 
+
